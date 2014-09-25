@@ -28,7 +28,7 @@ start_parallel_server() ->
 	spawn(fun() -> par_connect(Listen) end).
 
 par_connect(Listen) ->
-	{ok, Socket} -> gen_tcp:accept(Listen),
+	{ok, Socket} = gen_tcp:accept(Listen),
 	spawn(fun() -> par_connect(Listen) end),
 	loop(Socket).
 
@@ -45,7 +45,9 @@ loop(Socket) ->
 			gen_tcp:send(Socket, term_to_binary(Reply)),
 			loop(Socket);
 		{tcp_closed, Socket} ->
+			gen_tcp:send(Socket, "Server Socket closed ~n"),
 			io:format("Server Socket closed ~n")
+
 	end.
 
 nano_client_server(Str) ->
