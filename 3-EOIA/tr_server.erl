@@ -8,10 +8,11 @@
 %%%------------------------------------------
 
 -module (tr_server).
+-include ("/usr/local/lib/erlang/lib/eunit-2.2.7/include/eunit.hrl").
 -behaviour (gen_server).
 
 %%API
--export ([]).
+-export ([start_link/1, start_link/0, get_count/0, stop/0]).
 %%gen_server callbacks
 -export ([init/1, handle_call/3, handle_cast/2, handle_info/2,
 		  terminate/2, code_change/3]).
@@ -66,7 +67,7 @@ stop() ->
 %%%------------------------------------------
 init([Port]) ->
 	{ok, LSock} = gen_tcp:listen(Port, [{active, true}]),
-	{ok, #state{Port=Port, lsock=LSock}, 0}.
+	{ok, #state{port=Port, lsock=LSock}, 0}.
 
 handle_call(get_count, _From, State) ->
 	{reply, {ok, State#state.request_count}, State}.
@@ -109,9 +110,16 @@ split_out_mfa(RawData) ->
 		re:run(MFA, 
 			   "(.*):(.*)\s*\\((.*)\s*\\)\s*.\s*$",
 			   [{capture, [1,2,3], list}, ungreedy]),
-	{list_to_atom(M), list_to_atom(F), args_to_terms(A)}
+	{list_to_atom(M), list_to_atom(F), args_to_terms(A)}.
 
 args_to_terms(RawArgs) ->
 	{ok, Toks, _Line} = erl_scan:string("[" ++ RawArgs ++"]. ", 1),
 	{ok, Args} = erl_parse:parse_term(Toks),
 	Args.
+
+
+%%%------------------------------------------
+%%% test
+%%%------------------------------------------
+start_test() ->
+	{ok, _} = tr_server:start_link(1055).
