@@ -12,3 +12,6 @@ Oct.20th.2014
 
 ***Programming Erlang, 2nd***
 >	summarize chapter 1 to chapter 4
+
+
+
