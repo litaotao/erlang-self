@@ -23,4 +23,6 @@ Oct.21th.2014
 >	chapter 6, code and debug program;  
 >   deep analyse source code of OTP application behavior;
 
-
+***Others***
+>	Read EEP-48: maps
+> 	Read official document about records data type
