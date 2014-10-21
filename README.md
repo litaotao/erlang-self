@@ -13,5 +13,14 @@ Oct.20th.2014
 ***Programming Erlang, 2nd***
 >	summarize chapter 1 to chapter 4
 
+Oct.21th.2014
+---  
+***Programming Erlang, 2nd***
+>	summarize chapter 19
+>	summarize chapter 5
+
+***Erlang and OTP in Action***  
+>	chapter 6, code and debug program;  
+>   deep analyse source code of OTP application behavior;
 
 
