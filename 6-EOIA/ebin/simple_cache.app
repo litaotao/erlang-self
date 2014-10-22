@@ -4,6 +4,6 @@
 	 {modules, [sc_app,
 	 			sc_sup]},
 	 {registered, [sc_sup]},
-	 {applications, [kernel, stdlib]},
-	 {mod, {sc_app, []}}
-]}.
+	 {applications, [kernel, sasl, stdlib]},
+	 {mod, {sc_app, []}},
+	 {start_phases, []}]}.
