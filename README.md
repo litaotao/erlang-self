@@ -13,7 +13,7 @@ Oct.20th.2014
 ***Programming Erlang, 2nd***
 >	summarize chapter 1 to chapter 4
 
-Oct.21th.2014
+Oct.21st.2014
 ---  
 ***Programming Erlang, 2nd***
 >	summarize chapter 19
@@ -26,3 +26,9 @@ Oct.21th.2014
 ***Others***
 >	Read EEP-48: maps
 > 	Read official document about records data type
+
+Oct.22nd.2014
+---
+***Source Code***
+>	OTP Application Behavior---https://github.com/litaotao/erlang-source-code
+
