@@ -30,5 +30,6 @@ Oct.21st.2014
 Oct.22nd.2014
 ---
 ***Source Code***
->	OTP Application Behavior---https://github.com/litaotao/erlang-source-code
-
+>	OTP Application Behavior---https://github.com/litaotao/erlang-source-code;
+>	Message to Joe about the applicaiton behavior code;
+>	deep analyse source code of OTP application behavior;
