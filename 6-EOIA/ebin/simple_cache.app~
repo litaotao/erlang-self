@@ -1,6 +1,6 @@
 {application, simple_cache,
 	[{description, "A simple caching system"},
-	 {vsn, "0.1.0"},
+	 {vsn, "0.1.0新闻"},
 	 {modules, [sc_app,
 	 			sc_sup]},
 	 {registered, [sc_sup]},
