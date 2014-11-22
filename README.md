@@ -33,3 +33,12 @@ Oct.22nd.2014
 >	OTP Application Behavior---https://github.com/litaotao/erlang-source-code;
 >	Message to Joe about the applicaiton behavior code;
 >	deep analyse source code of OTP application behavior;
+
+Nov.1st.2014
+---  
+>	Blog on simple_cache application, EOIA chapter 6;  
+
+
+Nov.23rd.2014  
+---
+>	Blog on log system and application on EOIA chapter 7;  
