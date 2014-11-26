@@ -1,7 +1,9 @@
 -module (sc_event).
+
 -export ([start_link/0, add_handler/2, delete_handler/2,
 		  lookup/1, create/2, replace/2, delete/1]).
--define (SERVER, ?MOUDLE).
+
+-define (SERVER, ?MODULE).
 
 
 start_link() -> 

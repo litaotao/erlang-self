@@ -33,7 +33,8 @@ delete(Key) ->
 			sc_element:delete(Pid),
 			% log record
 			sc_event:delete(Key);
-		{error, _Reason} -> ok
+		{error, _Reason} -> 
+			ok
 	end.
 
 

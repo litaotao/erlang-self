@@ -1,4 +1,5 @@
 -module (sc_store).
+
 -export ([init/0, insert/2, delete/1, lookup/1]).
 
 -define (TABLE_ID, ?MODULE).
